@@ -1,5 +1,4 @@
 //Task 1
-
 const one = (arr, carrent) => {
   if (!arr.length) return null;
   const a = parseInt(arr.length / 2);
@@ -75,7 +74,6 @@ five(array);
 
 
 //Task 6
-
 function six(arr) {
   for (let i = arr.length - 1; i > 0; i--) {
     for (let j = 0; j < i; j++) {
