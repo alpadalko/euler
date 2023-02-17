@@ -86,21 +86,4 @@ function six(arr) {
       }
     }
   }
-}
-
-
-
-function two(obj, key){
-  const arr = [];
-  (function searchRecursive(obj, key){
-  const entries = Object.entries(obj)
-  for (const item of entries) {
-      if(item[0]==key) {arr.push(item[1])}
-      if(typeof item[1] == "object"){
-          searchRecursive(item[1], key)
-      }
-  }
-})(obj, key)
-return arr;
-}
-console.log(search(obj, 'a'));
+};
